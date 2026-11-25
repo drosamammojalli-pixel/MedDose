@@ -29,7 +29,7 @@ jobs:
 
       - name: Extract project
         run: |
-          ZIP="MedDose_Mobile_Build_Project_v0.2.0.zip"
+          ZIP="MedDose_v0.5.0_Source.zip"
           test -f "$ZIP"
           mkdir extracted
           unzip -q "$ZIP" -d extracted
