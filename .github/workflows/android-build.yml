@@ -29,8 +29,8 @@ jobs:
 
       - name: Extract project
         run: |
-          ZIP=$(find . -maxdepth 1 -name "*.zip" | head -n 1)
-          test -n "$ZIP"
+          ZIP="MedDose_Mobile_Build_Project_v0.2.0.zip"
+          test -f "$ZIP"
           mkdir extracted
           unzip -q "$ZIP" -d extracted
           cp -r extracted/. .
